@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/admin",
+    "name": "Admin",
+    "meta": {
+      "roles": ["admin"]
+    }
+  },
+  {
+    "path": "/user",
+    "name": "User",
+    "meta": {
+    "roles": ["user"]
+   }
+  },
+  {
+    "path": "/both",
+    "name": "Both",
+    "meta": {
+      "roles": ["admin", "user"]
+    },
+    "children": [
+      {
+        "meta": {
+          "roles": ["admin", "user"]
+        }
+      }
+    ]
+  }
+]
